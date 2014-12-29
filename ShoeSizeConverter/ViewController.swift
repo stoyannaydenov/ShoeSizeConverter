@@ -29,6 +29,8 @@ class ViewController: UIViewController {
         let conversionConstant = 30.5
         womensConvertedShoeSizeLabel.hidden = false
         womensConvertedShoeSizeLabel.text = "\(sizeFromTextField + conversionConstant )" + " in European Shoe Size"
+        womensShoeSizeTextField.resignFirstResponder()
+    
     }
     @IBAction func convertButtonPressed(sender: UIButton) {
      
@@ -38,7 +40,7 @@ class ViewController: UIViewController {
         let sizeFromTextField = mensShoeSizeTextField.text.toInt()!
         mensConvertedShoeSizeLabel.text = "\(sizeFromTextField + conversionConstant)" + " in European Shoe Size"
 
-
+        mensShoeSizeTextField.resignFirstResponder()
 
             }
 
