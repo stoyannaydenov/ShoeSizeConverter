@@ -28,18 +28,15 @@ class ViewController: UIViewController {
         let sizeFromTextField = Double ((womensShoeSizeTextField.text as NSString).doubleValue)
         let conversionConstant = 30.5
         womensConvertedShoeSizeLabel.hidden = false
-        womensConvertedShoeSizeLabel.text = "\(sizeFromTextField + conversionConstant )" + " in European Shoe Size"
+        womensConvertedShoeSizeLabel.text = "\(sizeFromTextField + conversionConstant )" + " in European Shoe Size More Less"
         womensShoeSizeTextField.resignFirstResponder()
     
     }
     @IBAction func convertButtonPressed(sender: UIButton) {
-     
-        
         let conversionConstant = 30
         mensConvertedShoeSizeLabel.hidden = false;
         let sizeFromTextField = mensShoeSizeTextField.text.toInt()!
-        mensConvertedShoeSizeLabel.text = "\(sizeFromTextField + conversionConstant)" + " in European Shoe Size"
-
+        mensConvertedShoeSizeLabel.text = "\(sizeFromTextField + conversionConstant)" + " in European Shoe Size More or Less"
         mensShoeSizeTextField.resignFirstResponder()
 
             }
